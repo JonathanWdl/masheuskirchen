@@ -34,6 +34,7 @@ services:
       dockerfile: php.Dockerfile
       args:
         - cUID
+        - cGID
     volumes:
       - ./config/typo3/AdditionalConfiguration.php:/var/www/html/wwwroot/typo3conf/AdditionalConfiguration.php:ro
       - ../:/var/www/html:rw

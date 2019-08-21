@@ -2,4 +2,4 @@
 
 ## Docker
 To start containers with docker-compose type: <br/>
-`cUID=$UID docker-compose up -d`
+`cUID=$(id -u ${USER}) cGID=$(id -g ${USER}) docker-compose up -d`

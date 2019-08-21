@@ -14,14 +14,19 @@ RUN apt-get update && apt-get install -y \
     && docker-php-ext-install -j$(nproc) gd \
     && apt-get clean
 
-# Install Composer
-RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
-
 # Install php extensions
 RUN docker-php-ext-install gd mysqli xml soap zip intl \
     && docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
     && docker-php-ext-install gd
 
+# Install Composer
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+
 # Get cUID of www-data
 ARG cUID
-RUN usermod --non-unique --uid $cUID www-data
+ARG cGID
+RUN usermod --non-unique --uid $cUID www-data \
+    && groupmod --gid $cGID www-data \
+    && usermod -g staff www-data \
+    && usermod --gid $cGID www-data
+USER www-data
