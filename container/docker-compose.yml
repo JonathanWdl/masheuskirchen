@@ -1,5 +1,6 @@
 version: "3.6"
 services:
+
   db:
     image: mariadb:latest
     restart: unless-stopped
@@ -36,6 +37,6 @@ services:
     volumes:
       - ./config/typo3/AdditionalConfiguration.php:/var/www/html/wwwroot/typo3conf/AdditionalConfiguration.php:ro
       - ../:/var/www/html:rw
-      - ./config/php/typo3.conf:/usr/local/etc/php-fpm.d/typo3-conf
+      - ./config/php/typo3.conf:/usr/local/etc/php-fpm.d/typo3.conf
 volumes:
   db:
