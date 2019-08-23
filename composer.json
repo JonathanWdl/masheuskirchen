@@ -1,0 +1,19 @@
+{
+    "name": "apprenticeship/typo3",
+    "description": "Typo3 instance for apprenticeship",
+    "license": "GPL-2.0+",
+    "minimum-stability": "dev",
+    "require": {
+        "typo3/cms-composer-installers": "^2.2",
+        "typo3/minimal": "^9.5"
+    },
+    "config":{
+        "cache-dir": "/var/www/html/.composer-cache"
+    },
+    "extra": {
+        "typo3/cms": {
+            "cms-package-dir": "{vendor-dir}/typo3/cms",
+            "web-dir": "wwwroot"
+        }
+    }
+}
