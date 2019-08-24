@@ -8,7 +8,9 @@
     "minimum-stability": "dev",
     "require": {
         "typo3/cms-composer-installers": "^2.2",
-        "typo3/cms-base-distribution": "^9.5"
+        "typo3/cms-base-distribution": "^9.5",
+        "bk2k/bootstrap-package": "10.0.x-dev",
+        "jonathanwdl/masheuskirchen": "dev-master"
     },
     "config":{
         "cache-dir": "/var/www/html/.composer-cache"
