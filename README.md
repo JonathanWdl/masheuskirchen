@@ -8,3 +8,9 @@ To start containers with docker-compose type: <br/>
 `./container/bin/manage.sh`
 
 With this bash script you can fully manage docker. The options to choose are shown when execting the script.
+
+## TYPO3
+
+### Backend
+username: typo3
+password: typo3typo3
