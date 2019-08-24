@@ -37,6 +37,7 @@
 ## COMPOSER
 ### Setup
 /vendor/
+/var/
 ### Persistent
 ### Configs
 !/composer.json
