@@ -5,6 +5,7 @@
 ### Persistent
 /data/*
 !/data/.gitkeep
+!/data/typo3_backup.sql
 ### Configs
 .idea/
 .vscode/
