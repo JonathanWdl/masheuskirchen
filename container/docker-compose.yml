@@ -32,10 +32,6 @@ services:
     build:
       context: .
       dockerfile: php.Dockerfile
-      args:
-        # export host's UID & GID to permit www-data writes given in volumes
-        - cUID
-        - cGID
     volumes:
       - ./config/typo3/AdditionalConfiguration.php:/var/www/html/wwwroot/typo3conf/AdditionalConfiguration.php:ro
       - ../:/var/www/html:rw
