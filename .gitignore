@@ -5,6 +5,7 @@
 ### Persistent
 /data/*
 !/data/.gitkeep
+!/data/typo3_backup.sql
 ### Configs
 .idea/
 .vscode/
@@ -19,6 +20,10 @@
 /wwwroot/typo3conf/ENABLE_INSTALL_TOOL
 /wwwroot/Packages
 /wwwroot/bin
+
+### Custom Extensions
+/wwwroot/typo3conf/ext/masheuskirchen/*
+
 ### Persistent
 /wwwroot/fileadmin/*
 !/wwwroot/fileadmin/.gitkeep

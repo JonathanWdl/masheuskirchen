@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9f8d2b69b72f26a92ba053e796220d4d",
+    "content-hash": "a05211bf7f826ecc858a376002440ce1",
     "packages": [
         {
             "name": "algo26-matthias/idna-convert",
@@ -54,6 +54,85 @@
                 "php"
             ],
             "time": "2016-06-19T18:08:43+00:00"
+        },
+        {
+            "name": "bk2k/bootstrap-package",
+            "version": "dev-BP_10-0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/benjaminkott/bootstrap_package.git",
+                "reference": "1f0863a358770287aa3b35c1fe7b3029d886c160"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/benjaminkott/bootstrap_package/zipball/1f0863a358770287aa3b35c1fe7b3029d886c160",
+                "reference": "1f0863a358770287aa3b35c1fe7b3029d886c160",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-libxml": "*",
+                "ext-simplexml": "*",
+                "php": ">=7.0.0",
+                "scssphp/scssphp": "^1.0.2",
+                "typo3/cms-backend": "^8.7.0 || ^9.0",
+                "typo3/cms-core": "^8.7.0 || ^9.0",
+                "typo3/cms-extbase": "^8.7.0 || ^9.0",
+                "typo3/cms-extensionmanager": "^8.7.0 || ^9.0",
+                "typo3/cms-fluid": "^8.7.0 || ^9.0",
+                "typo3/cms-frontend": "^8.7.0 || ^9.0",
+                "typo3/cms-install": "^8.7.0 || ^9.0",
+                "typo3/cms-rte-ckeditor": "^8.7.0 || ^9.0"
+            },
+            "require-dev": {
+                "bk2k/extension-helper": "^1.0",
+                "friendsofphp/php-cs-fixer": "^2.3.1",
+                "typo3/cms-felogin": "^8.7.0 || ^9.0",
+                "typo3/cms-form": "^8.7.0 || ^9.0",
+                "typo3/cms-indexed-search": "^8.7.0 || ^9.0",
+                "typo3/cms-tstemplate": "^8.7.0 || ^9.0",
+                "typo3/testing-framework": "^1.2 || ^4.9"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "cms-package-dir": "{$vendor-dir}/typo3/cms",
+                    "web-dir": ".build/web"
+                },
+                "branch-alias": {
+                    "dev-BP_10-0": "10.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "BK2K\\BootstrapPackage\\": "Classes"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Benjamin Kott",
+                    "role": "Developer",
+                    "email": "info@bk2k.info",
+                    "homepage": "http://www.bk2k.info/"
+                }
+            ],
+            "description": "Bootstrap Package delivers a full configured frontend theme for TYPO3, based on the Bootstrap CSS Framework.",
+            "homepage": "https://github.com/benjaminkott/bootstrap_package",
+            "keywords": [
+                "TYPO3 CMS",
+                "bootstrap",
+                "frontend",
+                "introduction",
+                "responsive",
+                "sitepackage",
+                "theme",
+                "web"
+            ],
+            "time": "2019-08-17T16:22:07+00:00"
         },
         {
             "name": "cogpowered/finediff",
@@ -922,6 +1001,34 @@
             "time": "2018-12-09T12:06:13+00:00"
         },
         {
+            "name": "jonathanwdl/masheuskirchen",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JonathanWdl/mash_sitepackage.git",
+                "reference": "658144e3cf58a421c5f264a4714fac3b6b30e918"
+            },
+            "require": {
+                "bk2k/bootstrap-package": "^10.0",
+                "typo3/cms-core": "^8.7 || ^9.5",
+                "typo3/cms-rte-ckeditor": "^8.7 || ^9.5"
+            },
+            "type": "typo3-cms-extension",
+            "autoload": {
+                "psr-4": {
+                    "Jonathanwdl\\Masheuskirchen\\": "Classes/"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "homepage": "https://github.com/JonathanWdl",
+            "keywords": [
+                "TYPO3 CMS"
+            ],
+            "time": "2019-08-24T14:10:56+00:00"
+        },
+        {
             "name": "nikic/php-parser",
             "version": "dev-master",
             "source": {
@@ -1309,6 +1416,65 @@
             ],
             "description": "A polyfill for getallheaders.",
             "time": "2019-03-08T08:55:37+00:00"
+        },
+        {
+            "name": "scssphp/scssphp",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/scssphp/scssphp.git",
+                "reference": "616c518333c656eaa23182ac6cfc01453f1e7c78"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/scssphp/scssphp/zipball/616c518333c656eaa23182ac6cfc01453f1e7c78",
+                "reference": "616c518333c656eaa23182ac6cfc01453f1e7c78",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6.0 || ^7"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.6",
+                "squizlabs/php_codesniffer": "~2.5",
+                "twbs/bootstrap": "~4.3",
+                "zurb/foundation": "~6.5"
+            },
+            "bin": [
+                "bin/pscss"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ScssPhp\\ScssPhp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anthon Pang",
+                    "email": "apang@softwaredevelopment.ca",
+                    "homepage": "https://github.com/robocoder"
+                },
+                {
+                    "name": "Cédric Morin",
+                    "email": "cedric@yterium.com",
+                    "homepage": "https://github.com/Cerdic"
+                }
+            ],
+            "description": "scssphp is a compiler for SCSS written in PHP.",
+            "homepage": "http://scssphp.github.io/scssphp/",
+            "keywords": [
+                "css",
+                "less",
+                "sass",
+                "scss",
+                "stylesheet"
+            ],
+            "time": "2019-08-07T20:16:04+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -4366,7 +4532,10 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "bk2k/bootstrap-package": 20,
+        "jonathanwdl/masheuskirchen": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
