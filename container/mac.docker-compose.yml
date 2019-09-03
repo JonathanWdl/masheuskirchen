@@ -31,10 +31,7 @@ services:
     restart: unless-stopped
     build:
       context: .
-      dockerfile: php.Dockerfile
-      args:
-        - cUID
-        - cGID
+      dockerfile: mac.php.Dockerfile
     volumes:
       - ./config/typo3/AdditionalConfiguration.php:/var/www/html/wwwroot/typo3conf/AdditionalConfiguration.php:ro
       - ../:/var/www/html:rw

@@ -3,7 +3,6 @@ set -eu
 
 cd "$(dirname "$0")/../"
 
-# Export dynamically the host user id and group-id
 export cUID=$(id -u ${USER})
 export cGID=$(id -g ${USER})
 

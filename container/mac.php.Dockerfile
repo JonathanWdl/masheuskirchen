@@ -23,12 +23,3 @@ RUN docker-php-ext-install gd mysqli xml soap zip intl\
 
 # Install Composer with www-data user
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
-
-# Assign host's UID and GID to www-data
-ARG cUID
-ARG cGID
-RUN usermod --non-unique --uid $cUID www-data && \
-    groupmod --gid $cGID www-data && \
-    usermod -g staff www-data && \
-    usermod --gid $cGID www-data
-USER www-data
