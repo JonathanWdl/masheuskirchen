@@ -27,7 +27,7 @@ services:
       - php
   
   php:
-    image: webrunners/php7.2-fpm-composer
+    image: jonathanwdl/php7.2-fpm-composer
     restart: unless-stopped
     build:
       context: .
