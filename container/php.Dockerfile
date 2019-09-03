@@ -23,3 +23,5 @@ RUN docker-php-ext-install gd mysqli xml soap zip intl\
 
 # Install Composer with www-data user
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+
+USER www-data
