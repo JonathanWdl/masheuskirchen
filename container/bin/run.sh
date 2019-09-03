@@ -4,7 +4,7 @@ set -eu
 cd "$(dirname "$0")/../"
 
 export cUID=$(id -u ${USER})
-export gUID=$(id -g ${USER})
+export cGID=$(id -g ${USER})
 
 set -x
 
