@@ -14,6 +14,8 @@ To build containers on linux execute the run script:
 After Docker containers are build, typo3 needs to be installed:
 `./container/bin/composer-install.sh`
 
+This script also automatically imports the database and clones the wdl_specials extension as custom repository.
+
 ### Import database
 The database needs to be imported:
 `./container/bin/import_db.sh`
