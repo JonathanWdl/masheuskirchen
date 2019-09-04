@@ -47,7 +47,8 @@ function main {
 function build-run-down () {
     set -eu
     cd "$(dirname "$0")/../"
-    export cUID=$UID
+    export cUID=$(id -u ${USER})
+    export cGID=$(id -g ${USER})
     set -x
     COMPOSE_PROJECT_NAME=masheuskirchen COMPOSE_FILE=docker-compose.yml exec docker-compose $1
 }
@@ -99,17 +100,14 @@ function system-prune {
 function backup-database {
     # get container id
     container=$(docker ps -qf "name=masheuskirchen_db_1")
-
     # Backup database
     docker exec $container /usr/bin/mysqldump -u root --password=typo3 typo3 > $(dirname "$0")/../../data/typo3_backup.sql
 }
 function import-database {
     # get container id
     container=$(docker ps -qf "name=masheuskirchen_db_1")
-
     # path to backupfile
     file=$(dirname "$0")/../../data/typo3_backup.sql
-
     if [ -f $file ]; then
         # import database
         cat $file | docker exec -i $container /usr/bin/mysql -u root --password=typo3 typo3
