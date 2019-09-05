@@ -1,0 +1,54 @@
+# GITIGNORE
+
+## GENERAL
+### Setup
+### Persistent
+/data/*
+!/data/.gitkeep
+!/data/typo3_backup.sql
+### Configs
+.idea/
+.vscode/
+### Runtime
+*.log
+
+## TYPO3
+### Setup
+/wwwroot/index.php
+/wwwroot/typo3
+/wwwroot/FIRST_INSTALL
+/wwwroot/typo3conf/ENABLE_INSTALL_TOOL
+/wwwroot/Packages
+/wwwroot/bin
+
+### Custom Extensions
+/wwwroot/typo3conf/ext/masheuskirchen/*
+
+### Persistent
+/wwwroot/fileadmin/*
+!/wwwroot/fileadmin/.gitkeep
+/wwwroot/uploads/*
+!/wwwroot/uploads/.gitkeep
+### Configs
+/wwwroot/typo3conf/AdditionalConfiguration.php
+/wwwroot/typo3conf/constants.ts
+/wwwroot/typo3conf/Constants.ts
+!/wwwroot/typo3conf/.gitkeep
+/wwwroot/typo3conf/*
+
+### Runtime
+/wwwroot/typo3conf/l10n/*
+/wwwroot/typo3conf/temp_CACHED_*.php
+/wwwroot/typo3temp/*
+!/wwwroot/typo3temp/.gitkeep
+
+## COMPOSER
+### Setup
+/vendor/
+/var/
+### Persistent
+### Configs
+!/composer.json
+!/composer.lock
+### Runtime
+/.composer-cache/
