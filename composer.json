@@ -1,7 +1,4 @@
 {
-    "repositories": [
-        { "type": "git", "url": "https://github.com/JonathanWdl/mash_sitepackage.git", "reference": "master" }
-    ],
     "name": "apprenticeship/typo3",
     "description": "Typo3 instance for apprenticeship",
     "license": "GPL-2.0+",
@@ -9,8 +6,7 @@
     "require": {
         "typo3/cms-composer-installers": "^2.2",
         "typo3/cms-base-distribution": "^9.5",
-        "bk2k/bootstrap-package": "10.0.x-dev",
-        "jonathanwdl/masheuskirchen": "dev-master"
+        "bk2k/bootstrap-package": "10.0.x-dev"
     },
     "config":{
         "cache-dir": "/var/www/html/.composer-cache"
