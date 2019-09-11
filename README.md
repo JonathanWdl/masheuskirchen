@@ -18,7 +18,7 @@ After Docker containers are build, typo3 needs to be installed:
 The database needs to be imported:
 `./container/bin/import_db.sh`
 
-## Implement custom extensions
+### Implement custom extensions
 Extensions that need to be installed as cloned repository are installed with the following script:
 `./container/bin/extension-installer.sh`
 
