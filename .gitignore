@@ -52,3 +52,8 @@
 !/composer.lock
 ### Runtime
 /.composer-cache/
+
+## Node
+/.DS_Store
+/node_modules/
+/wwwroot/.DS_Store
