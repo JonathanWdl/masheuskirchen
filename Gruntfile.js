@@ -8,13 +8,13 @@ module.exports = function( grunt ) {
                     style: compressed,
                 },
                 files: {
-                    'wwwroot/typo3conf/ext/masheuskirchen/Resources/Public/Css/main.css': 'wwwroot/typo3conf/ext/masheuskirchen/Resources/Public/Scss/Theme/main.scss'
+                    'wwwroot/typo3conf/ext/masheuskirchen/Resources/Public/Css/theme.css': 'wwwroot/typo3conf/ext/masheuskirchen/Resources/Public/Scss/Theme/theme.scss'
                 }
             }
         },
         watch: {
             styles: {
-                files: ['wwwroot/typo3conf/ext/masheuskirchen/Resources/Public/Scss/Theme/main.scss'],
+                files: ['wwwroot/typo3conf/ext/masheuskirchen/Resources/Public/Scss/Theme/theme.scss'],
                 tasks: ['sass'],
                 options: {
                     spawn: false
@@ -24,8 +24,8 @@ module.exports = function( grunt ) {
         concat_css: {
             options: {},
             all: {
-                src: ['wwwroot/typo3conf/ext/masheuskirchen/Resources/Public/Css/*.css', '!wwwroot/typo3conf/ext/masheuskirchen/Resources/Public/Css/basis.css'],
-                dest: 'wwwroot/typo3conf/ext/masheuskirchen/Resources/Public/Css/basis.css'
+                src: ['wwwroot/typo3conf/ext/masheuskirchen/Resources/Public/Css/*.css', '!wwwroot/typo3conf/ext/masheuskirchen/Resources/Public/Css/main.css'],
+                dest: 'wwwroot/typo3conf/ext/masheuskirchen/Resources/Public/Css/main.css'
             }
         },
         cssmin: {
