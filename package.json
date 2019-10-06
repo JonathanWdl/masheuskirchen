@@ -1,0 +1,31 @@
+{
+  "name": "masheuskirchen",
+  "version": "1.0.0",
+  "description": "## Installation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonathanWdl/masheuskirchen.git"
+  },
+  "author": "Melina Adam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JonathanWdl/masheuskirchen/issues"
+  },
+  "homepage": "https://github.com/JonathanWdl/masheuskirchen#readme",
+  "dependencies": {
+    "grunt": "^1.0.4",
+    "grunt-cli": "^1.3.2",
+    "ruby": "^0.6.1",
+    "sass": "^1.22.12"
+  },
+  "devDependencies": {
+    "grunt-concat-css": "^0.3.2",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.1.0"
+  }
+}
