@@ -9,7 +9,9 @@
         "bk2k/bootstrap-package": "10.0.x-dev"
     },
     "config":{
-        "cache-dir": "/var/www/html/.composer-cache"
+        "cache-dir": ".Build/composer-cache",
+        "vendor-dir": ".Build/vendor",
+        "bin-dir": ".Build/bin"
     },
     "extra": {
         "typo3/cms": {
