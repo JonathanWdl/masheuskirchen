@@ -41,6 +41,8 @@
 /wwwroot/typo3conf/temp_CACHED_*.php
 /wwwroot/typo3temp/*
 !/wwwroot/typo3temp/.gitkeep
+/node_modules
+package-lock.json
 
 ## COMPOSER
 ### Setup
