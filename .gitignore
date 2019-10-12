@@ -34,7 +34,8 @@
 /wwwroot/typo3conf/constants.ts
 /wwwroot/typo3conf/Constants.ts
 !/wwwroot/typo3conf/.gitkeep
-/wwwroot/typo3conf/*
+/wwwroot/typo3conf/ext*
+!/wwwroot/typo3conf/ext/.gitkeep
 
 ### Runtime
 /wwwroot/typo3conf/l10n/*
@@ -51,6 +52,7 @@ package-lock.json
 ### Persistent
 ### Configs
 !/composer.json
-!/composer.lock
+/composer.lock
 ### Runtime
+.Build
 /.composer-cache/
