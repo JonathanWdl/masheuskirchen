@@ -92,6 +92,9 @@ return [
         'bootstrap_package' => [
             'packagePath' => 'typo3conf/ext/bootstrap_package/',
         ],
+        'wdlspecials' => [
+            'packagePath' => 'typo3conf/ext/wdlspecials/',
+        ],
     ],
     'version' => 5,
 ];
