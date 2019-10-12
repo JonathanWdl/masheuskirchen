@@ -92,6 +92,9 @@ return [
         'bootstrap_package' => [
             'packagePath' => 'typo3conf/ext/bootstrap_package/',
         ],
+        'mash_sitepackage' => [
+            'packagePath' => 'typo3conf/ext/mash_sitepackage/',
+        ],
         'wdlspecials' => [
             'packagePath' => 'typo3conf/ext/wdlspecials/',
         ],
