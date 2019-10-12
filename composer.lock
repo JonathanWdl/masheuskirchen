@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7640d16dbe8ca4799b7bd420ec66281e",
+    "content-hash": "5f36fe2d3ac6cb3eca504a00297f413f",
     "packages": [
         {
             "name": "algo26-matthias/idna-convert",
@@ -1003,16 +1003,16 @@
         },
         {
             "name": "jonathanwdl/wdlspecials",
-            "version": "dev-composer/install-requirements",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JonathanWdl/wdlspecials.git",
-                "reference": "2ed968e8e96ac54db2c0d21f6a526417b15173e1"
+                "reference": "b62c7deb141e2f377433bc7b249013a661bfa74a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JonathanWdl/wdlspecials/zipball/2ed968e8e96ac54db2c0d21f6a526417b15173e1",
-                "reference": "2ed968e8e96ac54db2c0d21f6a526417b15173e1",
+                "url": "https://api.github.com/repos/JonathanWdl/wdlspecials/zipball/b62c7deb141e2f377433bc7b249013a661bfa74a",
+                "reference": "b62c7deb141e2f377433bc7b249013a661bfa74a",
                 "shasum": ""
             },
             "require": {
@@ -1022,22 +1022,7 @@
                 "jonathanwdl/wdlspecials": "self.version",
                 "typo3-ter/wdlspecials": "self.version"
             },
-            "require-dev": {
-                "nimut/testing-framework": "^4.1",
-                "phpmd/phpmd": "^2.7",
-                "phpstan/phpstan": "^0.11.16",
-                "sebastian/phpcpd": "^4.1",
-                "squizlabs/php_codesniffer": "^3.5"
-            },
             "type": "typo3-cms-extension",
-            "extra": {
-                "typo3/cms": {
-                    "extension-key": "wdlspecials",
-                    "cms-package-dir": "{$vendor-dir}/typo3/cms",
-                    "app-dir": ".Build",
-                    "web-dir": ".Build/public"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "JonathanWdl\\Wdlspecials\\": "Classes"
@@ -1048,11 +1033,6 @@
                     "JonathanWdl\\Wdlspecials\\Tests\\": "Tests"
                 }
             },
-            "scripts": {
-                "test": [
-                    "@php .Build/bin/phpunit --bootstrap .Build/vendor/autoload.php --no-configuration Tests/Unit"
-                ]
-            },
             "authors": [
                 {
                     "name": "Jonathan Wedel",
@@ -1060,10 +1040,45 @@
                 }
             ],
             "support": {
-                "source": "https://github.com/JonathanWdl/wdlspecials/tree/composer/install-requirements",
+                "source": "https://github.com/JonathanWdl/wdlspecials/tree/develop",
                 "issues": "https://github.com/JonathanWdl/wdlspecials/issues"
             },
-            "time": "2019-10-12T11:16:04+00:00"
+            "time": "2019-09-24T18:50:14+00:00"
+        },
+        {
+            "name": "mash-euskirchen/mash-sitepackage",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.com/JonathanWdl/mash-sitepackage.git",
+                "reference": "af70a82d09cc7dfbfa963e79bc35dff9976ffa91"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/JonathanWdl%2Fmash-sitepackage/repository/archive.zip?sha=af70a82d09cc7dfbfa963e79bc35dff9976ffa91",
+                "reference": "af70a82d09cc7dfbfa963e79bc35dff9976ffa91",
+                "shasum": ""
+            },
+            "require": {
+                "bk2k/bootstrap-package": "^10.0",
+                "typo3/cms-core": "^8.7 || ^9.5",
+                "typo3/cms-rte-ckeditor": "^8.7 || ^9.5"
+            },
+            "type": "typo3-cms-extension",
+            "autoload": {
+                "psr-4": {
+                    "MashEuskirchen\\MashSitepackage\\": "Classes/"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Sitepackage for Mash Euskirchen",
+            "homepage": "https://www.mash-euskirchen.de",
+            "keywords": [
+                "TYPO3 CMS"
+            ],
+            "time": "2019-10-12T15:52:47+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -4494,7 +4509,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "bk2k/bootstrap-package": 20,
-        "jonathanwdl/wdlspecials": 20
+        "jonathanwdl/wdlspecials": 20,
+        "mash-euskirchen/mash-sitepackage": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

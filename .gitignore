@@ -11,6 +11,7 @@
 .vscode/
 ### Runtime
 *.log
+.sass-cache/*
 
 ## TYPO3
 ### Setup
