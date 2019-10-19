@@ -98,9 +98,6 @@ return [
         'extension_builder' => [
             'packagePath' => 'typo3conf/ext/extension_builder/',
         ],
-        'wdlassortment' => [
-            'packagePath' => 'typo3conf/ext/wdlassortment/',
-        ],
         'wdlspecials' => [
             'packagePath' => 'typo3conf/ext/wdlspecials/',
         ],
