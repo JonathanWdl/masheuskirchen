@@ -1,7 +1,8 @@
 {
     "repositories": [
         {"type": "vcs", "url": "https://github.com/JonathanWdl/wdlspecials.git"},
-        {"type": "vcs", "url":  "https://gitlab.com/JonathanWdl/mash-sitepackage.git"}
+        {"type": "vcs", "url":  "https://gitlab.com/JonathanWdl/mash-sitepackage.git"},
+        {"type": "vcs", "url":  "https://gitlab.com/JonathanWdl/wdl-assortment.git"}
     ],
     "name": "apprenticeship/typo3",
     "description": "Typo3 instance for apprenticeship",
@@ -12,7 +13,9 @@
         "typo3/cms-base-distribution": "^9.5",
         "bk2k/bootstrap-package": "10.0.x-dev",
         "jonathanwdl/wdlspecials": "dev-implement_owl_carousel",
-        "mash-euskirchen/mash-sitepackage": "dev-develop"
+        "mash-euskirchen/mash-sitepackage": "dev-develop",
+        "jonathanwdl/wdlassortment": "dev-develop"
+
     },
     "config":{
         "cache-dir": ".Build/composer-cache",
@@ -30,5 +33,8 @@
                 "https://patch-diff.githubusercontent.com/raw/benjaminkott/bootstrap_package/pull/585.patch"
             }
         }
+    },
+    "require-dev": {
+        "friendsoftypo3/extension-builder": "dev-master"
     }
 }

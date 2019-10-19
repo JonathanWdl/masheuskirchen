@@ -53,7 +53,7 @@ package-lock.json
 ### Persistent
 ### Configs
 !/composer.json
-/composer.lock
+composer.lock
 ### Runtime
 .Build
 /.composer-cache/
