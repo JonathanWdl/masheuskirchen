@@ -12,10 +12,10 @@
         "typo3/cms-composer-installers": "^2.2",
         "typo3/cms-base-distribution": "^9.5",
         "bk2k/bootstrap-package": "10.0.x-dev",
+        "friendsoftypo3/extension-builder": "dev-master",
         "jonathanwdl/wdlspecials": "dev-implement_owl_carousel",
         "mash-euskirchen/mash-sitepackage": "dev-develop",
         "jonathanwdl/wdlassortment": "dev-develop"
-
     },
     "config":{
         "cache-dir": ".Build/composer-cache",
@@ -34,7 +34,9 @@
             }
         }
     },
-    "require-dev": {
-        "friendsoftypo3/extension-builder": "dev-master"
+    "autoload": {
+        "psr-4": {
+            "JonathanWdl\\Wdlspecials\\": "wwwroot/typo3conf/ext/wdlspecials/Classes"
+        }
     }
 }
