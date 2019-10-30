@@ -23,6 +23,8 @@ services:
     volumes:
       - ./config/nginx/site.conf:/etc/nginx/conf.d/default.conf:ro
       - ./../:/var/www/html:ro
+      - ./../data/fileadmin:/var/www/html/wwwroot/fileadmin:rw
+      - ./../data/uploads:/var/www/html/wwwroot/uploads:rw
     depends_on:
       - php
   
@@ -36,5 +38,7 @@ services:
       - ./config/typo3/AdditionalConfiguration.php:/var/www/html/wwwroot/typo3conf/AdditionalConfiguration.php:ro
       - ../:/var/www/html:rw
       - ./config/php/typo3.conf:/usr/local/etc/php-fpm.d/typo3.conf
+      - ./../data/fileadmin:/var/www/html/wwwroot/fileadmin:rw
+      - ./../data/uploads:/var/www/html/wwwroot/uploads:rw
 volumes:
   db:
