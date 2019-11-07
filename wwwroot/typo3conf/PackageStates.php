@@ -95,9 +95,6 @@ return [
         'mash_sitepackage' => [
             'packagePath' => 'typo3conf/ext/mash_sitepackage/',
         ],
-        'extension_builder' => [
-            'packagePath' => 'typo3conf/ext/extension_builder/',
-        ],
         'wdlspecials' => [
             'packagePath' => 'typo3conf/ext/wdlspecials/',
         ],
