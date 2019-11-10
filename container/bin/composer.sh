@@ -1,19 +1,13 @@
 #!/bin/bash
 
-# get php container id
-container=$(docker ps -qf "name=masheuskirchen_php_1")
+set -eu
 
-# run composer install as non root user
-docker exec -it $container composer install
+cd "$(dirname "$0")"
 
-# import database
-container=$(docker ps -aqf "name=masheuskirchen_db_1")
-file=$(dirname "$0")/../../data/typo3_backup.sql
-if [ -f $file ]; then
-    echo "import database ..."
-    cat $file | docker exec -i $container mysql -u typo3 --password=typo3 typo3
-    echo "import done."
+if [ -t 0 ] && [ -t 1 ] ; then
+  params=""
 else
-    echo "Database Backup does not exist!"
+  params=" -T"
 fi
 
+exec ./run.sh$params exec -u www-data php composer ${@:-help}
