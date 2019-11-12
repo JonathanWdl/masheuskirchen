@@ -2,7 +2,7 @@
     "repositories": [
         {"type": "vcs", "url": "git@github.com:JonathanWdl/wdlspecials.git"},
         {"type": "vcs", "url":  "git@gitlab.com:mash-euskirchen/mash-sitepackage.git"},
-        {"type": "vcs", "url":  "git@gitlab.com:JonathanWdl/wdl-assortment.git"}
+        {"type": "vcs", "url":  "git@gitlab.com:JonathanWdl/wdl-assortments.git"}
     ],
     "name": "apprenticeship/typo3",
     "description": "Typo3 instance for apprenticeship",
@@ -15,7 +15,7 @@
         "friendsoftypo3/extension-builder": "dev-master",
         "jonathanwdl/wdlspecials": "dev-develop",
         "mash-euskirchen/mash-sitepackage": "dev-develop",
-        "jonathanwdl/wdlassortment": "dev-develop"
+        "jonathanwdl/wdlassortments": "dev-develop"
     },
     "config":{
         "cache-dir": ".Build/composer-cache",
@@ -36,7 +36,8 @@
     },
     "autoload": {
         "psr-4": {
-            "JonathanWdl\\Wdlspecials\\": "wwwroot/typo3conf/ext/wdlspecials/Classes"
+            "JonathanWdl\\Wdlspecials\\": "wwwroot/typo3conf/ext/wdlspecials/Classes",
+            "JonathanWdl\\Wdlassortments\\": "wwwroot/typo3conf/ext/wdlassortments/Classes"
         }
     }
 }
