@@ -1,0 +1,176 @@
+
+renderingOptions:
+  submitButtonLabel: Senden
+type: Form
+identifier: mASHBirthday
+label: 'MASH Birthday'
+prototypeName: standard
+finishers:
+  -
+    options:
+      subject: 'MASH Euskirchen Geburtstag Reservierung'
+      recipientAddress: info@jonathanwdl.de
+      recipientName: 'MASH Euskirchen'
+      senderAddress: '{email-1}'
+      senderName: '{text-1}'
+      replyToAddress: '{email-1}'
+      carbonCopyAddress: ''
+      blindCarbonCopyAddress: ''
+      format: html
+      attachUploads: false
+      translation:
+        language: ''
+    identifier: EmailToReceiver
+renderables:
+  -
+    renderingOptions:
+      previousButtonLabel: 'Previous step'
+      nextButtonLabel: 'Next step'
+    type: Page
+    identifier: page-1
+    label: ''
+    renderables:
+      -
+        type: GridRow
+        identifier: gridrow-1
+        label: 'Grid: Row'
+        renderables:
+          -
+            defaultValue: ''
+            type: Text
+            identifier: text-1
+            label: Name
+            properties:
+              elementDescription: ''
+              gridColumnClassAutoConfiguration:
+                viewPorts:
+                  lg:
+                    numbersOfColumnsToUse: ''
+              fluidAdditionalAttributes:
+                placeholder: Name
+          -
+            defaultValue: '1'
+            properties:
+              fluidAdditionalAttributes:
+                step: 1
+                required: required
+                min: '1'
+                max: '45'
+              validationErrorMessages:
+                -
+                  code: 1221560910
+                  message: 'Bitte geben Sie die Anzahl der Personen an.'
+                -
+                  code: 1221560718
+                  message: 'Bitte geben Sie die Anzahl der Personen an.'
+                -
+                  code: 1347992400
+                  message: 'Bitte geben Sie die Anzahl der Personen an.'
+                -
+                  code: 1347992453
+                  message: 'Bitte geben Sie die Anzahl der Personen an.'
+                -
+                  code: 1221563685
+                  message: 'Sie müssen zwischen 1 und 45 Personen angeben.'
+                -
+                  code: 1221561046
+                  message: 'Sie müssen zwischen 1 und 45 Personen angeben.'
+              elementDescription: 'Max. 45 Personen'
+            type: Number
+            identifier: number-1
+            label: 'Anzahl Personen'
+            validators:
+              -
+                identifier: Number
+              -
+                identifier: NotEmpty
+              -
+                options:
+                  minimum: '1'
+                  maximum: '45'
+                identifier: NumberRange
+      -
+        type: GridRow
+        identifier: gridrow-2
+        label: 'Grid: Row'
+        renderables:
+          -
+            properties:
+              dateFormat: d.m.Y
+              enableDatePicker: false
+              displayTimeSelector: false
+              elementDescription: ''
+              fluidAdditionalAttributes:
+                required: required
+              validationErrorMessages:
+                -
+                  code: 1221560910
+                  message: 'Bitte geben Sie das Datum und die Uhrzeit an.'
+                -
+                  code: 1221560718
+                  message: 'Bitte geben Sie das Datum und die Uhrzeit an.'
+                -
+                  code: 1347992400
+                  message: 'Bitte geben Sie das Datum und die Uhrzeit an.'
+                -
+                  code: 1347992453
+                  message: 'Bitte geben Sie das Datum und die Uhrzeit an.'
+            type: DatePicker
+            identifier: datepicker-1
+            label: Datum
+            validators:
+              -
+                identifier: NotEmpty
+              -
+                identifier: DateTime
+          -
+            properties:
+              dateFormat: 'H:i'
+              enableDatePicker: false
+              displayTimeSelector: false
+              fluidAdditionalAttributes:
+                required: required
+            type: DatePicker
+            identifier: datepicker-2
+            label: Uhrzeit
+            validators:
+              -
+                identifier: NotEmpty
+      -
+        defaultValue: ''
+        type: Email
+        identifier: email-1
+        label: E-Mail
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: beispiel@email.com
+            required: required
+          validationErrorMessages:
+            -
+              code: 1221560910
+              message: 'Bitte tragen Sie Ihre E-Mail Adresse ein.'
+            -
+              code: 1221560718
+              message: 'Bitte tragen Sie Ihre E-Mail Adresse ein.'
+            -
+              code: 1347992400
+              message: 'Bitte tragen Sie Ihre E-Mail Adresse ein.'
+            -
+              code: 1347992453
+              message: 'Bitte tragen Sie Ihre E-Mail Adresse ein.'
+        validators:
+          -
+            identifier: EmailAddress
+          -
+            identifier: NotEmpty
+      -
+        type: Checkbox
+        identifier: checkbox-1
+        label: 'Datenschutz akzeptieren undso'
+        properties:
+          elementDescription: ''
+          fluidAdditionalAttributes:
+            required: required
+        validators:
+          -
+            identifier: NotEmpty
