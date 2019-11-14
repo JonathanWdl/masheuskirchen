@@ -31,8 +31,9 @@ return [
         'extConf' => [
             'backend' => 'a:6:{s:14:"backendFavicon";s:0:"";s:11:"backendLogo";s:70:"EXT:bootstrap_package/Resources/Public/Images/Backend/backend-logo.svg";s:20:"loginBackgroundImage";s:80:"EXT:bootstrap_package/Resources/Public/Images/Backend/login-background-image.jpg";s:13:"loginFootnote";s:0:"";s:19:"loginHighlightColor";s:0:"";s:9:"loginLogo";s:68:"EXT:bootstrap_package/Resources/Public/Images/Backend/login-logo.svg";}',
             'bootstrap_package' => 'a:8:{s:20:"disableCssProcessing";s:1:"0";s:17:"disableFontLoader";s:1:"0";s:24:"disableGoogleFontCaching";s:1:"0";s:27:"disablePageTsBackendLayouts";s:1:"0";s:28:"disablePageTsContentElements";s:1:"0";s:16:"disablePageTsRTE";s:1:"0";s:20:"disablePageTsTCEFORM";s:1:"0";s:20:"disablePageTsTCEMAIN";s:1:"0";}',
-            'extension_builder' => 'a:3:{s:15:"enableRoundtrip";s:1:"1";s:15:"backupExtension";s:1:"1";s:9:"backupDir";s:35:"uploads/tx_extensionbuilder/backups";}',
+            'extension_builder' => 'a:3:{s:9:"backupDir";s:35:"uploads/tx_extensionbuilder/backups";s:15:"backupExtension";s:1:"1";s:15:"enableRoundtrip";s:1:"1";}',
             'extensionmanager' => 'a:2:{s:21:"automaticInstallation";s:1:"1";s:11:"offlineMode";s:1:"0";}',
+            'vhs' => 'a:1:{s:20:"disableAssetHandling";s:1:"0";}',
         ],
     ],
     'EXTENSIONS' => [
@@ -62,6 +63,9 @@ return [
         'extensionmanager' => [
             'automaticInstallation' => '1',
             'offlineMode' => '0',
+        ],
+        'vhs' => [
+            'disableAssetHandling' => '0',
         ],
     ],
     'FE' => [
