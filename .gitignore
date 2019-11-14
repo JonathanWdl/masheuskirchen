@@ -6,6 +6,8 @@
 /data/*
 !/data/.gitkeep
 !/data/typo3_backup.sql
+!/data/fileadmin
+/data/uploads
 ### Configs
 .idea/
 .vscode/
@@ -26,8 +28,6 @@
 /wwwroot/typo3conf/ext/masheuskirchen/*
 
 ### Persistent
-/wwwroot/fileadmin/*
-!/wwwroot/fileadmin/.gitkeep
 /wwwroot/uploads/*
 !/wwwroot/uploads/.gitkeep
 ### Configs
