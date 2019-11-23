@@ -15,7 +15,8 @@
         "friendsoftypo3/extension-builder": "dev-master",
         "jonathanwdl/wdlspecials": "dev-develop",
         "mash-euskirchen/mash-sitepackage": "dev-develop",
-        "jonathanwdl/wdlassortments": "dev-develop"
+        "jonathanwdl/wdlassortments": "dev-develop",
+        "fluidtypo3/vhs": "^5.2"
     },
     "config":{
         "cache-dir": ".Build/composer-cache",

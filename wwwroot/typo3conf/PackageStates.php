@@ -95,6 +95,9 @@ return [
         'mash_sitepackage' => [
             'packagePath' => 'typo3conf/ext/mash_sitepackage/',
         ],
+        'vhs' => [
+            'packagePath' => 'typo3conf/ext/vhs/',
+        ],
         'wdlassortments' => [
             'packagePath' => 'typo3conf/ext/wdlassortments/',
         ],
