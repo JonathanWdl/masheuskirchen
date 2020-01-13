@@ -101,6 +101,9 @@ return [
         'wdlassortments' => [
             'packagePath' => 'typo3conf/ext/wdlassortments/',
         ],
+        'wdlcarousel' => [
+            'packagePath' => 'typo3conf/ext/wdlcarousel/',
+        ],
         'wdlspecials' => [
             'packagePath' => 'typo3conf/ext/wdlspecials/',
         ],
