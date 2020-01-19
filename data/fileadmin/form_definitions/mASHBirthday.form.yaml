@@ -105,16 +105,16 @@ renderables:
               validationErrorMessages:
                 -
                   code: 1221560910
-                  message: 'Bitte geben Sie das Datum und die Uhrzeit an.'
+                  message: 'Bitte tragen Sie ein Datum ein.'
                 -
                   code: 1221560718
-                  message: 'Bitte geben Sie das Datum und die Uhrzeit an.'
+                  message: 'Bitte tragen Sie ein Datum ein.'
                 -
                   code: 1347992400
-                  message: 'Bitte geben Sie das Datum und die Uhrzeit an.'
+                  message: 'Bitte tragen Sie ein Datum ein.'
                 -
                   code: 1347992453
-                  message: 'Bitte geben Sie das Datum und die Uhrzeit an.'
+                  message: 'Bitte tragen Sie ein Datum ein.'
             type: DatePicker
             identifier: datepicker-1
             label: Datum
@@ -130,6 +130,19 @@ renderables:
               displayTimeSelector: false
               fluidAdditionalAttributes:
                 required: required
+              validationErrorMessages:
+                -
+                  code: 1221560910
+                  message: 'Bitte tragen Sie eine Uhrzeit ein!'
+                -
+                  code: 1221560718
+                  message: 'Bitte tragen Sie eine Uhrzeit ein!'
+                -
+                  code: 1347992400
+                  message: 'Bitte tragen Sie eine Uhrzeit ein!'
+                -
+                  code: 1347992453
+                  message: 'Bitte tragen Sie eine Uhrzeit ein!'
             type: DatePicker
             identifier: datepicker-2
             label: Uhrzeit
@@ -166,11 +179,23 @@ renderables:
       -
         type: Checkbox
         identifier: checkbox-1
-        label: 'Datenschutz akzeptieren undso'
-        properties:
-          elementDescription: ''
-          fluidAdditionalAttributes:
-            required: required
+        label: 'Hiermit akzeptiere ich die Datenschutzerklärung'
         validators:
           -
             identifier: NotEmpty
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+          validationErrorMessages:
+            -
+              code: 1221560910
+              message: 'Bitte akzeptieren Sie die Datenschutzerklärung'
+            -
+              code: 1221560718
+              message: 'Bitte akzeptieren Sie die Datenschutzerklärung'
+            -
+              code: 1347992400
+              message: 'Bitte akzeptieren Sie die Datenschutzerklärung'
+            -
+              code: 1347992453
+              message: 'Bitte akzeptieren Sie die Datenschutzerklärung'
