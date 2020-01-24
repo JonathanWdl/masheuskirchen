@@ -18,7 +18,8 @@
         "mash-euskirchen/mash-sitepackage": "dev-develop",
         "jonathanwdl/wdlassortments": "dev-develop",
         "fluidtypo3/vhs": "^5.2",
-        "jonathanwdl/wdlcarousel": "dev-develop"
+        "jonathanwdl/wdlcarousel": "dev-develop",
+        "yoast-seo-for-typo3/yoast_seo": "^5.1"
     },
     "config":{
         "cache-dir": ".Build/composer-cache",
