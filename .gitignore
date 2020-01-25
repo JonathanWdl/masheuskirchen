@@ -57,3 +57,6 @@ composer.lock
 ### Runtime
 .Build
 /.composer-cache/
+
+# Prod
+wwwroot/fileadmin
