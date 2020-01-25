@@ -1,7 +1,7 @@
 <?php
 return [
     'BE' => [
-        'debug' => true,
+        'debug' => false,
         'explicitADmode' => 'explicitAllow',
         'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=2$YVBoVGhyLk9SQjlna0xPcA$bgVy6XyMNb/XUhehL2jYPDVWrMVg8RL0J04L0Pu6PQw',
         'loginSecurityLevel' => 'normal',
@@ -63,7 +63,7 @@ return [
         ],
     ],
     'FE' => [
-        'debug' => true,
+        'debug' => false,
         'loginSecurityLevel' => 'normal',
         'pageNotFound_handling' => '404',
         'passwordHashing' => [
@@ -89,17 +89,17 @@ return [
         'transport_smtp_username' => '',
     ],
     'SYS' => [
-        'devIPmask' => '*',
-        'displayErrors' => 1,
+        'devIPmask' => '',
+        'displayErrors' => 0,
         'encryptionKey' => '96346c45af94f0ec4d749dce21bdf0637ad777f2d40de3d499ec0504dfc7b933b0b6183cd216f53decaad92e5b1d5537',
-        'exceptionalErrors' => 12290,
+        'exceptionalErrors' => 4096,
         'features' => [
             'unifiedPageTranslationHandling' => true,
         ],
         'phpTimeZone' => 'Europe/Berlin',
         'sitename' => 'Mash Euskirchen',
         'systemLocale' => 'de_DE',
-        'systemLogLevel' => 0,
+        'systemLogLevel' => 2,
         'systemMaintainers' => [
             1,
         ],
