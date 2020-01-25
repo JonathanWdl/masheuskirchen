@@ -65,6 +65,7 @@ return [
     'FE' => [
         'debug' => true,
         'loginSecurityLevel' => 'normal',
+        'pageNotFound_handling' => '404',
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2iPasswordHash',
             'options' => [],
@@ -95,7 +96,9 @@ return [
         'features' => [
             'unifiedPageTranslationHandling' => true,
         ],
+        'phpTimeZone' => 'Europe/Berlin',
         'sitename' => 'Mash Euskirchen',
+        'systemLocale' => 'de_DE',
         'systemLogLevel' => 0,
         'systemMaintainers' => [
             1,

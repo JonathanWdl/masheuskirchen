@@ -8,7 +8,7 @@ languages:
     base: /
     typo3Language: de
     locale: de_DE
-    iso-639-1: ab
+    iso-639-1: de
     navigationTitle: German
     hreflang: de-DE
     direction: ltr
