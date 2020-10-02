@@ -107,9 +107,6 @@ return [
         'wdlspecials' => [
             'packagePath' => 'typo3conf/ext/wdlspecials/',
         ],
-        'yoast_seo' => [
-            'packagePath' => 'typo3conf/ext/yoast_seo/',
-        ],
     ],
     'version' => 5,
 ];
