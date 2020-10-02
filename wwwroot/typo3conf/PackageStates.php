@@ -92,8 +92,23 @@ return [
         'bootstrap_package' => [
             'packagePath' => 'typo3conf/ext/bootstrap_package/',
         ],
-        'masheuskirchen' => [
-            'packagePath' => 'typo3conf/ext/masheuskirchen/',
+        'mash_sitepackage' => [
+            'packagePath' => 'typo3conf/ext/mash_sitepackage/',
+        ],
+        'vhs' => [
+            'packagePath' => 'typo3conf/ext/vhs/',
+        ],
+        'wdlassortments' => [
+            'packagePath' => 'typo3conf/ext/wdlassortments/',
+        ],
+        'wdlcarousel' => [
+            'packagePath' => 'typo3conf/ext/wdlcarousel/',
+        ],
+        'wdlspecials' => [
+            'packagePath' => 'typo3conf/ext/wdlspecials/',
+        ],
+        'yoast_seo' => [
+            'packagePath' => 'typo3conf/ext/yoast_seo/',
         ],
     ],
     'version' => 5,

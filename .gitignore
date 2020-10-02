@@ -6,11 +6,14 @@
 /data/*
 !/data/.gitkeep
 !/data/typo3_backup.sql
+!/data/fileadmin
+/data/uploads
 ### Configs
 .idea/
 .vscode/
 ### Runtime
 *.log
+.sass-cache/*
 
 ## TYPO3
 ### Setup
@@ -25,8 +28,6 @@
 /wwwroot/typo3conf/ext/masheuskirchen/*
 
 ### Persistent
-/wwwroot/fileadmin/*
-!/wwwroot/fileadmin/.gitkeep
 /wwwroot/uploads/*
 !/wwwroot/uploads/.gitkeep
 ### Configs
@@ -34,13 +35,16 @@
 /wwwroot/typo3conf/constants.ts
 /wwwroot/typo3conf/Constants.ts
 !/wwwroot/typo3conf/.gitkeep
-/wwwroot/typo3conf/*
+/wwwroot/typo3conf/ext*
+!/wwwroot/typo3conf/ext/.gitkeep
 
 ### Runtime
 /wwwroot/typo3conf/l10n/*
 /wwwroot/typo3conf/temp_CACHED_*.php
 /wwwroot/typo3temp/*
 !/wwwroot/typo3temp/.gitkeep
+/node_modules
+package-lock.json
 
 ## COMPOSER
 ### Setup
@@ -49,6 +53,10 @@
 ### Persistent
 ### Configs
 !/composer.json
-!/composer.lock
+composer.lock
 ### Runtime
+.Build
 /.composer-cache/
+
+# Prod
+wwwroot/fileadmin
