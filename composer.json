@@ -14,11 +14,11 @@
         "typo3/cms-base-distribution": "^9.5",
         "bk2k/bootstrap-package": "10.0.x-dev",
         "friendsoftypo3/extension-builder": "dev-master",
-        "jonathanwdl/wdlspecials": "dev-develop",
-        "mash-euskirchen/mash-sitepackage": "dev-develop",
-        "jonathanwdl/wdlassortments": "dev-develop",
+        "jonathanwdl/wdlspecials": "^1.0",
+        "mash-euskirchen/mash-sitepackage": "^1.0",
+        "jonathanwdl/wdlassortments": "^1.0",
         "fluidtypo3/vhs": "^5.2",
-        "jonathanwdl/wdlcarousel": "dev-develop",
+        "jonathanwdl/wdlcarousel": "^1.0",
         "yoast-seo-for-typo3/yoast_seo": "^5.1"
     },
     "config":{
